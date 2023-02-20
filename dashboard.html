@@ -21,12 +21,14 @@
 
             <div class="sidelinks">
                 <ul>
-                    <li class="nav-item active nav-item d-flex">
-                        <a class="nav-link d-flex" href="dashboard.html" title="Dashboard">
+                    <li class="nav-item active d-flex">
+                        <div class="curve-up"><img src="./images/curved-up.svg" alt="curved"></div>
+                        <a class="nav-link" href="dashboard.html" title="Dashboard">
                             <img src="./images/ic-dashboard-default.svg" alt="dashboard" class="default" />
                             <img src="./images/ic-dashboard-active.svg" alt="dashboard" class="icon-active" />
                             <span>Dashboard</span>
                         </a>
+                        <div class="curve-down"><img src="./images/curved-down.svg" alt="curved"></div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="innerpage.html" title="Analysis">
@@ -87,18 +89,19 @@
                 </div>
         
                 <button class="btn btn-search d-md-none d-block ml-3" type="button"><img src="./images/search-icon.svg"></button>
-                <div class="dropdown">
+                <div class="dropdown-center dropdown">
                     <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown">
                         <img src="./images/bell.svg" class="notification">
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Message</a></li>
+                        <li><a class="dropdown-item" href="#">Something </a></li>
                     </ul>
                 </div>
-                <div class="dropdown">
-                    <button class=" dropdown-toggle profile" type="button" data-bs-toggle="dropdown">
+                <div class="dropdown-center dropdown">
+                    <button class=" dropdown-toggle profile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        
                         <img src="./images/profile.png">
                         <span>Hi, John</span>
                         <img src="./images/down-arrow.svg" class="ic-down">
@@ -106,12 +109,225 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">My Profile</a></li>
                         <li><a class="dropdown-item" href="#">Help</a></li>
-                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="dash-content">
+                <div class="page-wrapper ">
+                    <div class="page-title">
+                        <h3>Dashboard</h3>
+                    </div>
+                    <div class="sticker row">
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                            <div class="octicon d-flex">
+                                <div class="leftcard col-8">
+                                    <h5>Order</h5>
+                                    <h2>1,343</h2>
+                                    <div class="line d-flex align-items-center">
+                                        <span class="success ">+ 120</span>
+                                        <p>From last Week</p>
+                                    </div>
+                                </div>
+                                <div class="rightcard col-4 d-flex align-items-center justify-content-center">
+                                    <div class="circle d-flex align-items-center justify-content-center">
+                                        <img src="./images/ic-octicon.svg" class="img-fluid" alt="octicon">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                            <div class="star d-flex">
+                                <div class="leftcard col-8">
+                                    <h5>Total Product</h5>
+                                    <h2>803</h2>
+                                    <div class="line d-flex align-items-center">
+                                        <span class="success ">+ 80</span>
+                                        <p>New Products</p>
+                                    </div>
+                                </div>
+                                <div class="rightcard col-4 d-flex align-items-center justify-content-center">
+                                    <div class="circle d-flex align-items-center justify-content-center">
+                                        <img src="./images/ic-star.svg" class="img-fluid" alt="octicon">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                            <div class="user-group d-flex">
+                                <div class="leftcard col-8">
+                                    <h5>Unique Visitor</h5>
+                                    <h2>15,789</h2>
+                                    <div class="line d-flex align-items-center">
+                                        <span class="failure ">-640</span>
+                                        <p>From last Week</p>
+                                    </div>
+                                </div>
+                                <div class="rightcard col-4 d-flex align-items-center justify-content-center">
+                                    <div class="circle d-flex align-items-center justify-content-center">
+                                        <img src="./images/ic-usergroup.svg" class="img-fluid" alt="octicon">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-section row">
+                        <div class="col1 col-xl-6 col-sm-12">
+                            <div class="chart ">
+                                <h5>Total Sale</h5>
+                                <div class="data-graph">
+                                    <img src="./images/data-graph.svg" class="img-fluid" alt="data-graph">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2 col-xl-3 col-sm-6">
+                            <div class="chart ">
+                                <div class="line1 d-flex justify-content-between">
+                                    <h5>Top Seller</h5>
+                                    <a href="#" class="text-primary show-more">Show More</a>
+                                </div>
+                                <div class="pie-chart line2 d-flex justify-content-center">
+                                    <img src="./images/pie-chart.svg" class="img-fluid" alt="pie-chart">
+                                </div>
+                                <div class="line3 d-flex justify-content-between">
+                                    <div class="category d-flex">
+                                        <img src="./images/dot1.svg" class="img-fluid" alt="dot">
+                                        <h6>Category 1</h6>
+                                    </div>
+                                    <div class="percentage">
+                                        <h6>70%</h6>
+                                    </div>
+                                </div>
+                                <div class="line4 d-flex justify-content-between">
+                                    <div class="category d-flex">
+                                        <img src="./images/dot2.svg" class="img-fluid" alt="dot">
+                                        <h6>Category 2</h6>
+                                    </div>
+                                    <div class="percentage">
+                                        <h6>30%</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col3 col-xl-3 col-sm-6">
+                        <div class="chart ">
+                            <div class="line1 d-flex justify-content-between">
+                                <h5>Sales Report</h5>
+                                <a href="#" class="text-primary show-more">Show More</a>
+                            </div>
+                            <div class="cycle line2 d-flex justify-content-center">
+                                <img src="./images/cycle.svg" class="img-fluid" alt="pie-chart">
+                            </div>
+                            <div class="line3 d-flex justify-content-between">
+                                <div class="category d-flex">
+                                    <img src="./images/dot1.svg" class="img-fluid" alt="dot">
+                                    <h6>Category 1</h6>
+                                </div>
+                                <div class="percentage">
+                                    <h6>60%</h6>
+                                </div>
+                            </div>
+                            <div class="line4 d-flex justify-content-between">
+                                <div class="category d-flex">
+                                    <img src="./images/dot2.svg" class="img-fluid" alt="dot">
+                                    <h6>Category 2</h6>
+                                </div>
+                                <div class="percentage">
+                                    <h6>25%</h6>
+                                </div>
+                            </div>
+                            <div class="line5 d-flex justify-content-between">
+                                <div class="category d-flex">
+                                    <img src="./images/dot3.svg" class="img-fluid" alt="dot">
+                                    <h6>Category 3</h6>
+                                </div>
+                                <div class="percentage">
+                                    <h6>15%</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
 
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <th>Employee Name</th>
+                                <th>Email ID</th>
+                                <th>Phone no</th>
+                                <th>Joining Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Darrell Steward</td>
+                                    <td>alma.lawson@example.com</td>
+                                    <td>(629) 555-0129</td>
+                                    <td>August 7, 2017</td>
+                                    <td class="text-primary">Active</td>
+                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Annette Black</td>
+                                    <td>michelle.rivera@example.com</td>
+                                    <td>(704) 555-0127</td>
+                                    <td>March 13, 2014</td>
+                                    <td class="text-primary">Active</td>
+                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jenny Wilson</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>(270) 555-0117</td>
+                                    <td>May 6, 2012</td>
+                                    <td class="text-primary">Active</td>
+                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Kathryn Murphy</td>
+                                    <td>dolores.chambers@example.com</td>
+                                    <td>(207) 555-0119</td>
+                                    <td>November 16, 2014</td>
+                                    <td class="text-danger">Disable </td>
+                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Arlene McCoy</td>
+                                    <td>michael.mitc@example.com</td>
+                                    <td>(405) 555-0128</td>
+                                    <td>October 24, 2018</td>
+                                    <td class="text-primary">Active</td>
+                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Arlene McCoy</td>
+                                    <td>michael.mitc@example.com</td>
+                                    <td>(405) 555-0128</td>
+                                    <td>October 24, 2018</td>
+                                    <td class="text-primary">Active</td>
+                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Eleanor Pena</td>
+                                    <td>bill.sanders@example.com</td>
+                                    <td>(219) 555-0114</td>
+                                    <td>May 9, 2014</td>
+                                    <td class="text-primary">Active</td>
+                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                </div>
             </div>
         </div>
     </div>
