@@ -83,15 +83,15 @@
                 <button class="btn-menu toggle-sidebar" type="button"><img src="./images/menu-bar.svg" alt="sidebar menu">
                 </button>
         
-                <div class="search-bar d-flex d-md-block d-none">
-                    <input class="form-control shadow-none d-md-block d-none" type="text" placeholder="Search" aria-label="Search">
-                    <button type="button" class="btn btn-close-search "><img src="./images/close-icon.svg" alt="close"></button>
+                <div class="search-bar d-md-block ">
+                    <input class="form-control shadow-none d-md-block" type="search" placeholder="Search" aria-label="search">
+                    <button type="button" class="btn btn-close-search btn-close" aria-label="Close"></button>
                 </div>
         
-                <button class="btn btn-search d-md-none d-block ml-3" type="button"><img src="./images/search-icon.svg"></button>
+                <button class="btn btn-search d-md-none d-block ml-3" type="button"><img src="./images/search-icon.svg" alt="search"></button>
                 <div class="dropdown">
                     <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        <img src="./images/bell.svg" class="notification">
+                        <img src="./images/bell.svg" alt="notification" class="notification">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -102,9 +102,9 @@
                 <div class="dropdown">
                     <button class=" dropdown-toggle profile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         
-                        <img src="./images/profile.png">
+                        <img src="./images/profile.png" alt=" ">
                         <span>Hi, John</span>
-                        <img src="./images/down-arrow.svg" class="ic-down">
+                        <img src="./images/down-arrow.svg" alt=" " class="ic-down">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">My Profile</a></li>
@@ -245,7 +245,7 @@
                             </div>
                             <div class="line5 d-flex justify-content-between">
                                 <div class="category d-flex">
-                                    <img src="./images/dot3.svg" class="img-fluid" alt="dot">
+                                    <img src="./images/dot3.svg"  class="img-fluid" alt="dot">
                                     <h6>Category 3</h6>
                                 </div>
                                 <div class="percentage">
@@ -258,14 +258,14 @@
 
                     <div class="table-responsive">
                         <table class="table">
-                            <thead>
+                            <tr>
                                 <th>Employee Name</th>
                                 <th>Email ID</th>
                                 <th>Phone no</th>
                                 <th>Joining Date</th>
                                 <th>Status</th>
                                 <th>Action</th>
-                            </thead>
+                            </tr>
                             <tbody>
                                 <tr>
                                     <td>Darrell Steward</td>

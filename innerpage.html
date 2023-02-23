@@ -92,15 +92,15 @@
                 <button class="btn-menu toggle-sidebar" type="button"><img src="./images/menu-bar.svg" alt="sidebar menu">
                 </button>
         
-                <div class="search-bar d-flex d-md-block d-none">
-                    <input class="form-control shadow-none d-md-block d-none" type="text" placeholder="Search" aria-label="Search">
-                    <button type="button" class="btn btn-close-search "><img src="./images/close-icon.svg" alt="close"></button>
-                </div>
+                <div class="search-bar d-flex d-md-block  ">
+                  <input class="form-control shadow-none d-md-block d-none" type="search" placeholder="Search" aria-label="search">
+                  <button type="button" class="btn btn-close-search btn-close" aria-label="Close"></button>
+              </div>
         
-                <button class="btn btn-search d-md-none d-block ml-3" type="button"><img src="./images/search-icon.svg"></button>
+                <button class="btn btn-search d-md-none d-block ml-3" type="button"><img src="./images/search-icon.svg" alt="search"></button>
                 <div class="dropdown">
                     <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        <img src="./images/bell.svg" class="notification">
+                        <img src="./images/bell.svg" alt="notification" class="notification">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -110,9 +110,9 @@
                 </div>
                 <div class="dropdown">
                     <button class=" dropdown-toggle profile" type="button" data-bs-toggle="dropdown">
-                        <img src="./images/profile.png">
+                        <img src="./images/profile.png" alt=" ">
                         <span>Hi, John</span>
-                        <img src="./images/down-arrow.svg" class="ic-down">
+                        <img src="./images/down-arrow.svg" alt=" " class="ic-down">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">My Profile</a></li>
@@ -227,7 +227,7 @@
 
                             <div class=" col-md-4">
                               <div class="form-floating">
-                                <select class="form-select " name="Designation"  id="form-2" >
+                                <select class="form-select " name="Designation"   >
                                   <option selected> Country </option>
                                   <option value="1">One</option>
                                   <option value="2">Two</option>
@@ -260,30 +260,30 @@
                             <div class="row mt-4">
                               <div class=" col-md-3 col-lg-3 col-md-4 ">
                                 <div class="form-floating  ">
-                                  <input type="text" class="form-control text-dark" id="floatinginput" value="John Deo"
+                                  <input type="text" class="form-control text-dark" id="floatingname" value="John Deo"
                                     placeholder="First Name">
-                                  <label for="floatinginput">Full Name</label>
+                                  <label for="floatingname">Full Name</label>
                                 </div>
                               </div>
                               <div class=" col-md-3 col-lg-3 col-md-4 ">
                                 <div class="form-floating ">
-                                  <input type="text" class="form-control text-secondary" id="underlinedashed" value="John Doe" placeholder="Username" disabled>
-                                  <label for="underlinedashed">disabled</label>
+                                  <input type="text" class="form-control text-secondary" id="underlineDashed" value="John Doe" placeholder="Username" disabled>
+                                  <label for="underlineDashed">disabled</label>
                                 </div>
                               </div>
                               
                               <div class=" col-md-3 col-lg-3 col-md-4 ">
                                 <div class="eye form-floating ">
-                                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                  <label for="floatingPassword">Password</label>
+                                  <input type="password" class="form-control" id="floatingpassword" placeholder="Password">
+                                  <label for="floatingpassword">Password</label>
                                   <button class="btn show-password" type="button"><img src="images/eye.svg"
                                           alt="password"></button>
                                 </div>
                               </div>
                               <div class="col-md-3 col-lg-3 col-md-4 ">
                                 <div class=" form-floating " >
-                                    <input type="text" class="focus form-control shadow-none  text-dark"  id="floatingInput"   placeholder="First Name..">
-                                    <label for="floatingInput" class="focus-label">Focus</label>
+                                    <input type="text" class="focus form-control shadow-none  text-dark"  id="floatingFocus"   placeholder="First Name..">
+                                    <label for="floatingFocus" class="focus-label">Focus</label>
                                 </div>
                               </div>
                              
@@ -356,7 +356,7 @@
                             <button class="secondary form-check-inline mb-2 ">
                               Secondary 
                             </button>
-                            <button class="disabled form-check-inline mb-2"disabled>
+                            <button class="disabled form-check-inline mb-2" disabled>
                               disabled 
                             </button>
                           </div>
