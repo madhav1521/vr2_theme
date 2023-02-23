@@ -8,8 +8,8 @@
     <title>Company|Dashboard</title>
     <link rel="shortcut icon" href="./images/company-icon.svg">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
 </head>
 <body> 
@@ -22,30 +22,30 @@
             <div class="sidelinks">
                 <ul>
                     <li class="nav-item active d-flex">
-                        <div class="curve-up"><img src="./images/curved-up.svg" alt="curved"></div>
-                        <a class="nav-link" href="dashboard.html" title="Dashboard">
+                        
+                        <a class="nav-link elements" href="dashboard.html" title="Dashboard">
                             <img src="./images/ic-dashboard-default.svg" alt="dashboard" class="default" />
                             <img src="./images/ic-dashboard-active.svg" alt="dashboard" class="icon-active" />
                             <span>Dashboard</span>
                         </a>
-                        <div class="curve-down"><img src="./images/curved-down.svg" alt="curved"></div>
+                        
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="innerpage.html" title="Analysis">
+                        <a class="nav-link" href="innerpage.html" title="Market">
                             <img src="./images/ic-market-default.svg" alt="Market" class="default" />
                             <img src="./images/ic-market-active.svg" alt="Market" class="icon-active" />
                             <span>Market</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="Inbox">
+                        <a class="nav-link" href="#" title="Users">
                             <img src="./images/ic-users-default.svg" alt="Users" class="default" />
                             <img src="./images/ic-users-active.svg" alt="Users" class="icon-active" />
                             <span>Users</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="History">
+                        <a class="nav-link" href="#" title="Docs">
                             <img src="./images/ic-docs-default.svg" alt="Docs" class="default" />
                             <img src="./images/ic-docs-active.svg" alt="Docs" class="icon-active" />
                             <span>Docs</span>
@@ -59,7 +59,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="Maintenance">
+                        <a class="nav-link" href="#" title="Help">
                             <img src="./images/ic-help-default.svg" alt="help" class="default" />
                             <img src="./images/ic-help-active.svg" alt="help" class="icon-active" />
                             <span>Help</span>
@@ -89,24 +89,24 @@
                 </div>
         
                 <button class="btn btn-search d-md-none d-block ml-3" type="button"><img src="./images/search-icon.svg"></button>
-                <div class="dropdown-center dropdown">
+                <div class="dropdown">
                     <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown">
                         <img src="./images/bell.svg" class="notification">
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Message</a></li>
                         <li><a class="dropdown-item" href="#">Something </a></li>
                     </ul>
                 </div>
-                <div class="dropdown-center dropdown">
+                <div class="dropdown">
                     <button class=" dropdown-toggle profile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         
                         <img src="./images/profile.png">
                         <span>Hi, John</span>
                         <img src="./images/down-arrow.svg" class="ic-down">
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">My Profile</a></li>
                         <li><a class="dropdown-item" href="#">Help</a></li>
                         <li><a class="dropdown-item" href="index.html">Logout</a></li>
@@ -119,9 +119,9 @@
                         <h3>Dashboard</h3>
                     </div>
                     <div class="sticker row">
-                        <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="card">
-                            <div class="octicon d-flex">
+                        <div class="col col-xl-4 col-md-6 col-12">
+                            <div class="card d-flex flex-row">
+                            <!-- <div class="octicon d-flex"> -->
                                 <div class="leftcard col-8">
                                     <h5>Order</h5>
                                     <h2>1,343</h2>
@@ -135,12 +135,12 @@
                                         <img src="./images/ic-octicon.svg" class="img-fluid" alt="octicon">
                                     </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                             </div>
                         </div>
-                        <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="col col-xl-4 col-md-6 col-12">
                             <div class="card">
-                            <div class="star d-flex">
+                            <!-- <div class="star d-flex"> -->
                                 <div class="leftcard col-8">
                                     <h5>Total Product</h5>
                                     <h2>803</h2>
@@ -154,17 +154,17 @@
                                         <img src="./images/ic-star.svg" class="img-fluid" alt="octicon">
                                     </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                             </div>
                         </div>
-                        <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="col col-xl-4 col-md-6 col-12">
                             <div class="card">
-                            <div class="user-group d-flex">
+                            <!-- <div class="user-group d-flex"> -->
                                 <div class="leftcard col-8">
                                     <h5>Unique Visitor</h5>
                                     <h2>15,789</h2>
                                     <div class="line d-flex align-items-center">
-                                        <span class="failure ">-640</span>
+                                        <span class="failure ">- 640</span>
                                         <p>From last Week</p>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@
                                         <img src="./images/ic-usergroup.svg" class="img-fluid" alt="octicon">
                                     </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col2 col-xl-3 col-sm-6">
+                        <div class="col1 col-xl-3 col-sm-6">
                             <div class="chart ">
                                 <div class="line1 d-flex justify-content-between">
                                     <h5>Top Seller</h5>
@@ -216,7 +216,7 @@
                             </div>
                         </div>
                         
-                        <div class="col3 col-xl-3 col-sm-6">
+                        <div class="col1 col-xl-3 col-sm-6">
                         <div class="chart ">
                             <div class="line1 d-flex justify-content-between">
                                 <h5>Sales Report</h5>
@@ -273,7 +273,15 @@
                                     <td>(629) 555-0129</td>
                                     <td>August 7, 2017</td>
                                     <td class="text-primary">Active</td>
-                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                    <td>
+                                        <div class="dropdown">
+                                        <button class=" dropdown-toggle border-0 bg-transparent " data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/link-dots.svg" alt="link"></button>
+                                        <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Make Active..</a></li>
+                                            <li><a class="dropdown-item" href="#">Make Disable..</a></li>
+                                        </ul>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Annette Black</td>
@@ -281,7 +289,13 @@
                                     <td>(704) 555-0127</td>
                                     <td>March 13, 2014</td>
                                     <td class="text-primary">Active</td>
-                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                    <td><div class="dropdown">
+                                        <button class=" dropdown-toggle border-0 bg-transparent " data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/link-dots.svg" alt="link"></button>
+                                        <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Make Active..</a></li>
+                                            <li><a class="dropdown-item" href="#">Make Disable..</a></li>
+                                        </ul>
+                                        </div></td>
                                 </tr>
                                 <tr>
                                     <td>Jenny Wilson</td>
@@ -289,7 +303,14 @@
                                     <td>(270) 555-0117</td>
                                     <td>May 6, 2012</td>
                                     <td class="text-primary">Active</td>
-                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                    <td><div class="dropdown">
+                                        <button class=" dropdown-toggle border-0 bg-transparent " data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/link-dots.svg" alt="link"></button>
+                                        <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Make Active..</a></li>
+                                            <li><a class="dropdown-item" href="#">Make Disable..</a></li>
+                                        </ul>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Kathryn Murphy</td>
@@ -297,7 +318,13 @@
                                     <td>(207) 555-0119</td>
                                     <td>November 16, 2014</td>
                                     <td class="text-danger">Disable </td>
-                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                    <td><div class="dropdown">
+                                        <button class=" dropdown-toggle border-0 bg-transparent " data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/link-dots.svg" alt="link"></button>
+                                        <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Make Active..</a></li>
+                                            <li><a class="dropdown-item" href="#">Make Disable..</a></li>
+                                        </ul>
+                                        </div></td>
                                 </tr>
                                 <tr>
                                     <td>Arlene McCoy</td>
@@ -305,7 +332,13 @@
                                     <td>(405) 555-0128</td>
                                     <td>October 24, 2018</td>
                                     <td class="text-primary">Active</td>
-                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                    <td><div class="dropdown">
+                                        <button class=" dropdown-toggle border-0 bg-transparent " data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/link-dots.svg" alt="link"></button>
+                                        <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Make Active..</a></li>
+                                            <li><a class="dropdown-item" href="#">Make Disable..</a></li>
+                                        </ul>
+                                        </div></td>
                                 </tr>
                                 <tr>
                                     <td>Arlene McCoy</td>
@@ -313,7 +346,13 @@
                                     <td>(405) 555-0128</td>
                                     <td>October 24, 2018</td>
                                     <td class="text-primary">Active</td>
-                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                    <td><div class="dropdown">
+                                        <button class=" dropdown-toggle border-0 bg-transparent " data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/link-dots.svg" alt="link"></button>
+                                        <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Make Active..</a></li>
+                                            <li><a class="dropdown-item" href="#">Make Disable..</a></li>
+                                        </ul>
+                                        </div></td>
                                 </tr>
                                 <tr>
                                     <td>Eleanor Pena</td>
@@ -321,7 +360,13 @@
                                     <td>(219) 555-0114</td>
                                     <td>May 9, 2014</td>
                                     <td class="text-primary">Active</td>
-                                    <td><a href="#"><img src="./images/link-dots.svg" alt="link"></a></td>
+                                    <td><div class="dropdown">
+                                        <button class=" dropdown-toggle border-0 bg-transparent " data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/link-dots.svg" alt="link"></button>
+                                        <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Make Active..</a></li>
+                                            <li><a class="dropdown-item" href="#">Make Disable..</a></li>
+                                        </ul>
+                                        </div></td>
                                 </tr>
                             </tbody>
                         </table>
